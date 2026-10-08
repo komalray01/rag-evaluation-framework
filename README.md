@@ -10,24 +10,6 @@ faithfulness, answer relevance, and latency. The goal is a results table that sh
 (local, free embeddings), ChromaDB (local vector store), rank_bm25 (keyword search),
 a local cross-encoder reranker, and RAGAS for evaluation.
 
-## What you need to fill in before this runs
-
-This code is complete and structured, but three things are deliberately left for you:
-
-1. **A Groq API key** — free, no credit card, at https://console.groq.com. Copy
-   `.env.example` to `.env` and paste your key in.
-2. **Your document set** — put 5 or so PDFs into `data/documents/`. Suggested free,
-   real, coherent set: the **AWS Well-Architected Framework whitepapers** (free,
-   official, download from AWS's site — search "AWS Well-Architected Framework
-   whitepaper pdf"). Any focused PDF set works; this one ties in well if you're also
-   using AWS elsewhere on your resume.
-3. **Your ground-truth question/answer pairs** — `data/ground_truth.json` currently has
-   2 placeholder examples clearly marked `EXAMPLE - REPLACE ME`. Read your actual
-   downloaded PDFs and write 12-15 real question/answer pairs grounded in that real
-   text. **Do not skip this or leave the placeholders in** — this file is your entire
-   evaluation methodology; questions not genuinely checked against your own source
-   documents will produce scores you can't defend in an interview.
-
 ## Setup
 
 ```bash
