@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "question": "What are the six pillars of the AWS Well-Architected Framework?",
+    "ground_truth_answer": "The six pillars of the AWS Well-Architected Framework are Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.",
+    "source_doc": "AWS Well-Architected Framework"
+  },
+  {
+    "id": "q2",
+    "question": "What is the primary objective of the Security Pillar in AWS Well-Architected Framework?",
+    "ground_truth_answer": "The Security pillar focuses on protecting information and systems. Key topics include confidentiality and integrity of data, managing user permissions, and establishing controls to detect security events.",
+    "source_doc": "Security Pillar"
+  },
+  {
+    "id": "q3",
+    "question": "How does the Reliability Pillar define system reliability in AWS?",
+    "ground_truth_answer": "The Reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it's expected to. This includes the ability to operate and test the workload through its total lifecycle.",
+    "source_doc": "Reliability Pillar"
+  },
+  {
+    "id": "q4",
+    "question": "What are the design principles for the Cost Optimization Pillar in AWS?",
+    "ground_truth_answer": "Key design principles for Cost Optimization include adopting a consumption model, measuring overall efficiency, stopping spending money on undifferentiated heavy lifting, and analyzing and attributing expenditure.",
+    "source_doc": "Cost Optimization Pillar"
+  },
+  {
+    "id": "q5",
+    "question": "What is the main goal of the Performance Efficiency Pillar?",
+    "ground_truth_answer": "The Performance Efficiency pillar focuses on the efficient use of computing resources to meet system requirements and maintaining that efficiency as demand changes and technologies evolve.",
+    "source_doc": "Performance Efficiency Pillar"
+  },
+  {
+    "id": "q6",
+    "question": "What are the core design principles of the Security Pillar?",
+    "ground_truth_answer": "The Security pillar principles include implementing a strong identity foundation, enabling traceability, applying security at all layers, protecting data in transit and at rest, keeping people away from data, and preparing for security events.",
+    "source_doc": "Security Pillar"
+  },
+  {
+    "id": "q7",
+    "question": "How does the AWS Well-Architected Framework recommend handling failure in the Reliability Pillar?",
+    "ground_truth_answer": "It recommends automatically recovering from failure by monitoring systems for key performance indicators (KPIs) and triggering automated responses when thresholds are breached.",
+    "source_doc": "Reliability Pillar"
+  },
+  {
+    "id": "q8",
+    "question": "What does 'undifferentiated heavy lifting' refer to in cloud infrastructure management?",
+    "ground_truth_answer": "It refers to the repetitive, non-unique task of managing infrastructure like racking, stacking, and powering servers, which AWS manages so organizations can focus on their application logic.",
+    "source_doc": "AWS Well-Architected Framework"
+  },
+  {
+    "id": "q9",
+    "question": "What is the role of monitoring in the Operational Excellence Pillar?",
+    "ground_truth_answer": "Monitoring provides operational visibility into workloads to understand health, track changes, identify anomalies, and continuously improve processes and procedures.",
+    "source_doc": "AWS Well-Architected Framework"
+  },
+  {
+    "id": "q10",
+    "question": "Why is choosing the right storage solution important for Performance Efficiency?",
+    "ground_truth_answer": "Selecting the optimal storage solution (e.g., block, file, object, or database) based on access patterns and latency requirements ensures workloads meet operational demands without over-provisioning cost or bottlenecking performance.",
+    "source_doc": "Performance Efficiency Pillar"
+  }
+]
