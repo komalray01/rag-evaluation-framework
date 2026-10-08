@@ -10,36 +10,6 @@ faithfulness, answer relevance, and latency. The goal is a results table that sh
 (local, free embeddings), ChromaDB (local vector store), rank_bm25 (keyword search),
 a local cross-encoder reranker, and RAGAS for evaluation.
 
-## Setup
-
-```bash
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env          # then edit .env and paste your real Groq key
-```
-
-## Running the pipeline
-
-```bash
-# 1. (Optional) sanity-check chunking works on your PDFs
-python src/ingest.py
-
-# 2. Run every curated configuration against every ground-truth question
-python src/run_experiments.py
-
-# 3. Score everything with RAGAS and build the final comparison table
-python src/evaluate_ragas.py
-
-# 4. View the results
-streamlit run dashboard/app.py
-```
-
-`run_experiments.py` will take a while and make many Groq API calls — one per
-(configuration × question). With 8 curated configurations and, say, 15 questions,
-that's 120 LLM calls. Groq's free tier is rate-limited, not billed, but if you hit a
-rate limit mid-run, just re-run — configurations use cached embeddings/collections so
-it won't redo everything from scratch, though it will redo the LLM calls.
 
 ## Why a curated set of 8 configurations, not a full grid
 
